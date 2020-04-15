@@ -1,0 +1,13 @@
+Start project
+instalar dependencia do mongo ->  
+	composer require jenssegers/mongodb  
+	composer require mongodb/mongodb
+change .env
+alterar o database -> config/database.php (adicionar as config do mongodb)
+adicinar ao provider mongodbserviceprovider -> config/database.php  Jenssegers\Mongodb\MongodbServiceProvider::class,
+
+create o crud
+Adicionar na model  connection  e collection e importar o tipo da model
+
+https://github.com/jenssegers/laravel-mongodb 
+

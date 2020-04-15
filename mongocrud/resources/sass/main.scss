@@ -1,0 +1,53 @@
+.title{
+    margin-left: 45%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+.add{
+    margin-left: 85%;
+}
+
+.cd{
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.formadd{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+}
+
+.addtitle{
+    @extend .title;
+}
+
+.error{
+    margin-top: 1%;
+    margin-left: 30%;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.btnaction{
+    margin-left: 70%;
+}
+
+.btnact{
+    margin-left: 4%;
+}
+
+.prodnull{
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 10%;
+}
+
+.msg{
+    margin-left:  45%;
+    margin-top: 2%;
+}

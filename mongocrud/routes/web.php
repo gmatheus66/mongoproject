@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ProdutoController@index')->name('index');
+
+Route::get('/create', 'ProdutoController@create');
+
+Route::post('/create', 'ProdutoController@register')->name('create');
+
+Route::get('/{id}', 'ProdutoController@get_produto');
+
+Route::post('/update', 'ProdutoController@update');
+
+Route::get('/delete/{id}', 'ProdutoController@delete');
