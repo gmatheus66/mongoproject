@@ -1,0 +1,39 @@
+//Install php-dev
+sudo apt-get update
+sudo apt-get install php-dev
+
+//Install Pear
+wget http://pear.php.net/go-pear.phar
+php go-pear.phar
+
+//Install dependencie(optional)
+sudo pear install Archive_Tar
+
+//Install dependencie mongodb - PHP
+sudo pecl install mongodb
+
+//Add extension mongodb to php.ini
+extension=mongodb.so
+sudo vim /etc/php/7.x/cli/php.ini
+
+
+//Dependencies composer mongodb
+composer require mongodb/mongodb
+composer require jenssegers/mongodb
+
+
+//.env
+DB_CONNECTION=mongodb
+DB_HOST=127.0.0.1
+DB_PORT=27017
+DB_DATABASE=Note
+DB_USERNAME=
+DB_PASSWORD=
+
+
+// Api
+//Dependencie adapter passport Laravel
+composer require designmynight/laravel-mongodb-passport
+
+//Error php artisan passport:install
+https://github.com/sadnub/laravel-mongodb-passport-fix
